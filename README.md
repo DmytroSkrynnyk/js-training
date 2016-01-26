@@ -1,0 +1,2 @@
+# js-training
+Learning JavaScript
