@@ -33,7 +33,7 @@ var order = new App.Order('JavaScript', 20);
 //===== загадка =====
 // ______________________________________________________________
 var check = function (developer) {
-  this.veryfy.apply(order, order.Software);
+  // this.veryfy.apply(order, order.Software);
 };
 // var check = false;
 // ______________________________________________________________
