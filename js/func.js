@@ -43,7 +43,7 @@ var add = function (a,b) {
 };
 var summ = add.apply(null, arr); //null - глобальный контекст (window)
 console.log(summ);
-var summ2 = add.apply(obj, arr); //obj - глобальный контекст (window)
+var summ2 = add.apply(obj, arr); //obj - локальный контекст (obj)
 console.log(summ2);
 
 //============ Шаблон4: вызов конструктора ============
