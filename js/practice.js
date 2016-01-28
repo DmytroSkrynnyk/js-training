@@ -25,14 +25,14 @@ App.Order.prototype.createApp = function (time) {
 };
 
 //===== Создаю сотрудников и Заказ =====
-var  js_developer = new App.Developer('Antony', 37, 'JavaScript');
-var css_developer = new App.Developer('Ivan', 34, 'CSS');
-var order = new App.Order('JavaScript', 20);
+App.js_developer = new App.Developer('Antony', 37, 'JavaScript');
+App.css_developer = new App.Developer('Ivan', 34, 'CSS');
+App.order = new App.Order('JavaScript', 20);
 
 
 //===== загадка =====
 // ______________________________________________________________
-var check = function (developer) {
+App.check = function (developer) {
   // this.veryfy.apply(order, order.Software);
 };
 // var check = false;
@@ -40,8 +40,10 @@ var check = function (developer) {
 
 
 //===== Если у сотрудника есть необходимый скилл, то выполняем заказ =====
-if (check) {
-  console.log(order.createApp(order.allTime));
+if (App.check) {
+  console.log(App.order.createApp(App.order.allTime));
 } else {
   console.log('Sorry, We can not this work');
 }
+
+console.log(App);
